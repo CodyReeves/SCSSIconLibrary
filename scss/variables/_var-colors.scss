@@ -1,0 +1,73 @@
+/* Colors
+   ========================================================================== */
+  $brand-primary: #3A4044 !default;
+  $brand-secondary: #5e5e5e !default;
+  $brand-support: #0275d8 !default;
+  $brand-default: #5bc0de !default;
+  $brand-success:  #5cb85c !default;
+  $brand-warning: #f0ad4e !default;
+  $brand-info: #e86800 !default;
+  $brand-danger: #E50000 !default;
+
+  $cta-1: red !default;
+  $cta-2: green !default;
+  $cta-3: blue !default;
+
+  $white: #fff !default;
+  $light-grey: #f7f7f7 !default;
+  $grey: #BDBDBD !default;
+  $dark-grey: #303030 !default;
+  $black: #141414 !default;
+
+  $link: #e86800 !default;
+  $link-secondary: darken($link, 15%) !default;
+
+  $facebook: #3b5998 !default;
+  $twitter: #55acee !default;
+  $google: #dd4b39 !default;
+  $youtube: #bb0000 !default;
+  $pinterest: #cb2027 !default;
+  $vimeo: #aad450 !default;
+  $tumblr: #32506d !default;
+  $rss: #ff6600 !default;
+  $instagram: #125688 !default;
+
+  //Adds colors to lists for mixens
+  $social-colors: (
+    (facebook, $facebook),
+    (twitter, $twitter),
+    (google, $google),
+    (youtube, $youtube),
+    (pinterest, $pinterest),
+    (vimeo, $vimeo),
+    (tumber, $tumblr),
+    (rss, $rss),
+    (instagram, $instagram)
+  );
+
+  $brand-colors: (
+    (primary, $brand-primary),
+    (secondary, $brand-secondary),
+    (support, $brand-support),
+    (default, $brand-default),
+    (success, $brand-success),
+    (warning, $brand-warning),
+    (info, $brand-info),
+    (danger, $brand-danger),
+    (link , $link),
+    (link-secondary, $link-secondary)
+  );
+
+  $cta-colors: (
+    (cta-1, $cta-1),
+    (cat-2, $cta-2),
+    (cat-3, $cta-3)
+  );
+
+  $grey-colors: (
+    (white, $white),
+    (light-grey, $light-grey),
+    (grey, $grey),
+    (dark-grey, $dark-grey),
+    (black, $black)
+  );
