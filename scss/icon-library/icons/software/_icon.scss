@@ -1,0 +1,51 @@
+/*
+@mixin sil-sw-1($color: $default-color){
+    @include svg('svg',(x:'0px', y:'0px', viewBox:'0 0 29 30', xml:space:'preserve'), $color){
+      @include svg('',());
+    }
+}
+*/
+
+//box-3d
+@mixin sil-sw-1($color: $icon-default-color){
+  @include svg('svg',(x: 0px, y: 0px, viewBox: '0 0 30 30','xml:space': preserve), $color){
+    @include svg('g', (transform: 'translate(-210 -980)')){
+      @include svg('g'){
+        @include svg('path', ( d: 'M219,983l-6,6v1v17h17h1l6-6v-18h-17H219z M230,1006h-16v-16h5h1h10v10v1V1006z M231,1005.586V1001v-1v-9.586v-0.707l5-5    v0.707V1000v0.586l-0.414,0.414L231,1005.586z M229.707,984h5.586l-5,5h-0.586H220h-1h-4.586l4.586-4.586l0.414-0.414H220H229.707    z'));
+      }
+    }
+  }
+}
+
+//pyramid-3d
+@mixin sil-sw-2($color: $icon-default-color){
+  @include svg('svg',( x: 0px, y: 0px, viewBox: '0 0 29 30', 'xml:space': preserve), $color){
+    @include svg('g',(transform: 'translate(-450 -980)')){
+      @include svg('path',(d: 'M451,1006h27l-13.5-22L451,1006z M452.787,1005l11.713-19.088L476.213,1005H452.787z'));
+      @include svg('rect',(x: '464', y: '988', width: '1', height: '2'));
+      @include svg('rect',(x: '464', y: '992', width: '1', height: '2'));
+      @include svg('rect',(x: '464', y: '996', width: '1', height: '2'));
+      @include svg('rect',(x: '458.778', y: '1000.801', transform: 'matrix(-0.4394 -0.8983 0.8983 -0.4394 -238.839 1854.5466)', width: '1', height: '2'));
+      @include svg('rect',(x: '455.185', y: '1002.56', transform: 'matrix(-0.4394 -0.8983 0.8983 -0.4394 -245.5903 1853.8508)', width: '1', height: '2'));
+      @include svg('rect',(x: '462.371', y: '999.043', transform: 'matrix(-0.4394 -0.8983 0.8983 -0.4394 -232.0877 1855.2424)', width: '1', height: '2'));
+      @include svg('rect',(x: '472.315', y: '1003.06', transform: 'matrix(0.898 0.44 -0.44 0.898 489.8109 -105.8937)', width: '2', height: '1'));
+      @include svg('rect',(x: '468.722', y: '1001.301', transform: 'matrix(0.898 0.44 -0.44 0.898 488.6707 -104.4923)', width: '2', height: '1'));
+      @include svg('rect',(x: '465.129', y: '999.542', transform: 'matrix(0.898 0.44 -0.44 0.898 487.5305 -103.0911)', width: '2', height: '1'));
+    }
+  }
+}
+
+//sphere-3d
+@mixin sil-sw-3($color: $default-color){
+    @include svg('svg',(x: 0px, y: 0px, viewBox: '0 0 29 30', 'xml:space': preserve), $color){
+      @include svg('g',(transform: 'translate(-390 -980)')){
+          @include svg('path',(d: 'M405,982c-7.18,0-13,5.82-13,13s5.82,13,13,13s13-5.82,13-13S412.18,982,405,982z M405,1007 c-6.107,0-11.152-4.588-11.896-10.497c2.132,1.316,7.035,1.997,11.896,1.997s9.764-0.681,11.896-1.997 C416.152,1002.412,411.107,1007,405,1007z M405,997.5c-7.879,0-12-1.628-12-2.5c0-6.617,5.383-12,12-12s12,5.383,12,12 C417,995.872,412.879,997.5,405,997.5z'));
+          @include svg('path',(d: 'M402.115,991.58l0.055,0.998c0.61-0.033,1.238-0.057,1.88-0.069l-0.02-1C403.377,991.521,402.737,991.545,402.115,991.58z'));
+          @include svg('path',(d: 'M394.506,992.838l0.33,0.943c0.51-0.179,1.105-0.345,1.772-0.493l-0.219-0.977 C395.686,992.47,395.052,992.646,394.506,992.838z'));
+          @include svg('path',(d: 'M398.291,991.963l0.148,0.988c0.588-0.088,1.209-0.165,1.858-0.229l-0.098-0.996 C399.533,991.792,398.895,991.871,398.291,991.963z'));
+          @include svg('path',(d: 'M415.144,993.774l0.33-0.943c-0.546-0.191-1.181-0.367-1.886-0.523l-0.217,0.977 C414.038,993.432,414.635,993.597,415.144,993.774z'));
+          @include svg('path',(d: 'M405.93,992.509c0.641,0.012,1.269,0.035,1.879,0.068l0.055-0.998c-0.622-0.035-1.262-0.059-1.916-0.07L405.93,992.509z'));
+          @include svg('path',(d: 'M409.68,992.72c0.649,0.063,1.271,0.141,1.86,0.228l0.146-0.988c-0.604-0.091-1.242-0.17-1.909-0.235L409.68,992.72z'))
+      }
+    }
+}

@@ -1,0 +1,11 @@
+@mixin software-icon($type, $color){
+
+  @if contains($software-map, $type) == true {
+
+    @if $type == 'box-3d' {
+      @include sil-sw-1($color);
+    } @else if $type == '' {
+
+    }
+  }
+}
