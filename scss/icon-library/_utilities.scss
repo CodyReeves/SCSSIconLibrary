@@ -1,0 +1,9 @@
+@function contains($list,$value) {
+  $result: false;
+  @each $item in $list {
+    @if $item == $value {
+      $result: true;
+    }
+  }
+  @return $result;
+}

@@ -1,0 +1,24 @@
+/*
+mixin of software containing all mixins
+create map of all mixin names for validation
+
+main mixin will check if value is in map of software if statment
+if it is @include icons pack with correct name/color
+
+*/
+$icon-default-color: $black !default;
+
+@mixin icon($icon, $icon-color){
+  $software: contains($software-map, $icon);
+  $layouts: ;
+  $payment: ;
+  @if $software == true {
+    @include software-icon($icon, $icon-color);
+  } @else if $layouts == true {
+
+  } @else if $payment == true {
+
+  } @else {
+    @warn '`#{$icon}` is not an icon, Please update to a proper icon.';
+  }
+}
