@@ -2,5 +2,9 @@
 .style {
   width: 250px;
   height: 250px;
-  @include icon(box-3d, $black);
+  @include svg('svg',(x:'0px', y:'0px', viewBox:'0 0 30 30', 'xml:space': preserve), $black){
+    @include svg('g',(transform: 'translate(-510 -860)')){
+      @include svg('path',(d: 'M512,888h25v-25h-25V888z M513,864h23v7h-23V864z M513,872h23v7h-23V872z M513,880h23v7h-23V880z'));
+    }
+  }
 }
